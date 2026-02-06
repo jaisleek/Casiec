@@ -75,7 +75,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onApplyClick, onNavigate, on
       />
 
       {/* Strategic Alliances Banner */}
-      <section className="py-16 bg-white/[0.02] border-y border-white/5 overflow-hidden">
+      {/* <section className="py-16 bg-white/[0.02] border-y border-white/5 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-32 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-700">
             <div className="flex flex-col items-center">
@@ -91,7 +91,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onApplyClick, onNavigate, on
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Curated Insights Section */}
       <section className="py-32 relative overflow-hidden border-b border-white/5 bg-gradient-to-b from-transparent to-white/[0.02]">
@@ -163,7 +163,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onApplyClick, onNavigate, on
               <h2 className="text-4xl font-black text-white mb-4 tracking-tighter uppercase italic">Casiec Financials</h2>
               <p className="text-gray-200 mb-8 leading-relaxed font-medium">Focused on driving financial inclusion to stimulate economic prosperity.</p>
               <ul className="space-y-4 mb-12 flex-grow">
-                {["Asset Finance", "Consumer Loan", "Gender Credit" ].map((item, i) => (
+                {["Asset Finance", "Consumer Loan", "Gender Credit"].map((item, i) => (
                   <li key={i} className="flex items-center gap-4 text-sm font-bold text-gray-300">
                     <div className="w-2 h-2 rounded-full bg-nova-500 shadow-[0_0_10px_rgba(37,99,235,0.5)]"></div>
                     {item}

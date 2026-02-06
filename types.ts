@@ -86,7 +86,6 @@ export interface TeamMember {
   role: string;
   bio: string;
   imageGradient: string;
-  specialization: string;
   imageUrl?: string;
   linkedin?: string;
   twitter?: string;

@@ -67,11 +67,11 @@ export const AboutPage: React.FC = () => {
               <div className="w-full md:w-72 flex-shrink-0 space-y-6 sticky top-32">
                 <div className="p-8 bg-white/5 rounded-3xl border border-white/5 shadow-2xl backdrop-blur-md flex flex-col items-center text-center group hover:bg-white/10 transition-all">
                   <Logo size="sm" className="mb-4 transform group-hover:scale-105 transition-transform" />
-                  <p className="text-[10px] text-gray-500 uppercase tracking-[0.3em] font-black">Financial Intermediation</p>
+                  {/* <p className="text-[10px] text-gray-500 uppercase tracking-[0.3em] font-black">Financial Intermediation</p> */}
                 </div>
                 <div className="p-8 bg-white/5 rounded-3xl border border-white/5 shadow-2xl backdrop-blur-md flex flex-col items-center text-center group hover:bg-white/10 transition-all">
                   <BroastreetLogo size="sm" className="mb-4 transform group-hover:scale-105 transition-transform" />
-                  <p className="text-[10px] text-gray-500 uppercase tracking-[0.3em] font-black">Strategic Support</p>
+                  {/* <p className="text-[10px] text-gray-500 uppercase tracking-[0.3em] font-black">Strategic Support</p> */}
                 </div>
               </div>
             </div>
@@ -119,11 +119,11 @@ export const AboutPage: React.FC = () => {
               </div>
               <h3 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tighter">Words On The Marble</h3>
               <p className="text-emerald-400 leading-tight text-2xl font-black italic tracking-tight">
-               God's Own Institution <br />
+                God's Own Institution <br />
                 <span className="text-white/60 text-lg font-bold not-italic">(GOI factor)</span>
               </p>
               <p className="text-emerald-400 leading-tight text-2xl font-black italic tracking-tight">
-                 <br />
+                <br />
                 <span className="text-white/60 text-lg font-bold not-italic"></span>
               </p>
             </article>

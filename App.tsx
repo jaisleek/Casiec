@@ -17,7 +17,7 @@ import { ArticleDetailPage } from './components/ArticleDetailPage';
 import { Article } from './types';
 import { Globe, Linkedin, Twitter, ChevronRight, Lock } from 'lucide-react';
 import { Logo } from './components/Logo';
-
+import { PartnerPage } from './components/PartnerPage';
 import { ToastProvider } from './components/Toast';
 
 // Main Application Component for CASIEC Financials
@@ -96,6 +96,8 @@ const App: React.FC = () => {
         );
       case 'about':
         return <AboutPage />;
+        case 'partner':
+          return <PartnerPage />;
       case 'team':
         return <TeamPage />;
       case 'financial-support':

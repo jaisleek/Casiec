@@ -20,13 +20,15 @@ export const BroastreetLogo: React.FC<BroastreetLogoProps> = ({ className = '', 
   return (
     <div className={`flex flex-col items-center leading-none select-none relative ${className}`}>
       <div className="flex items-center relative">
-        <span className={`${currentSize.mainText} font-black italic tracking-tighter ${textColor} lowercase flex items-center`}>
+
+        <img src="/broastreet-logo.png" alt="Broastreet Logo" className="w-24 h-19" />
+        {/* <span className={`${currentSize.mainText} font-black italic tracking-tighter ${textColor} lowercase flex items-center`}>
           broastreet
           <span className={`${currentSize.tm} align-top font-bold opacity-40 ml-0.5 -mt-2`}>TM</span>
-        </span>
-        
+        </span> */}
+
         {/* Overlaid Orange Swoosh Checkmark */}
-        <div className="absolute left-[38%] -top-1 pointer-events-none">
+        {/* <div className="absolute left-[38%] -top-1 pointer-events-none">
           <svg 
             viewBox="0 0 24 24" 
             fill="none" 
@@ -41,15 +43,15 @@ export const BroastreetLogo: React.FC<BroastreetLogoProps> = ({ className = '', 
               strokeLinejoin="round"
             />
           </svg>
-        </div>
+        </div> */}
       </div>
-      
+
       {/* DyDX Sub-badge */}
-      <div className="flex items-center justify-center border border-white/20 bg-white/5 backdrop-blur-sm rounded px-1.5 py-0.5 mt-0.5 ml-12">
+      {/* <div className="flex items-center justify-center border border-white/20 bg-white/5 backdrop-blur-sm rounded px-1.5 py-0.5 mt-0.5 ml-12">
         <span className={`${currentSize.subText} font-black text-white/90 tracking-widest uppercase italic`}>
           DyDX
         </span>
-      </div>
+      </div> */}
     </div>
   );
 };

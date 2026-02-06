@@ -14,6 +14,7 @@ import { RealEstatePage } from './RealEstatePage';
 import { TeamPage } from './TeamPage';
 import { AboutPage } from './AboutPage';
 import { ArticleDetailPage } from './ArticleDetailPage';
+import { PartnerPage } from './PartnerPage';
 import { Article } from '../types';
 import { Globe, Linkedin, Twitter, ChevronRight } from 'lucide-react';
 

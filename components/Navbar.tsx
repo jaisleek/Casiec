@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, ChevronRight, Wallet, Briefcase, BookOpen, Info, Users, LineChart } from 'lucide-react';
+import { Menu, X, ChevronRight, Wallet, Briefcase, BookOpen, Info, Users, LineChart, Handshake } from 'lucide-react';
 import { Logo } from './Logo';
 
 interface NavbarProps {
@@ -12,12 +12,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onApplyClick, currentView, onNav
   const [isOpen, setIsOpen] = React.useState(false);
 
   const navItems = [
-    { id: 'about', label: 'Company', icon: <Info size={14} /> },
-    { id: 'team', label: 'Our Team', icon: <Users size={14} /> },
-    { id: 'financial-support', label: 'Capital Solutions', icon: <Wallet size={14} /> },
-    { id: 'business-support', label: 'Advisory', icon: <Briefcase size={14} /> },
+    { id: 'financial-support', label: 'Casiec Financials', icon: <Wallet size={14} /> },
+    { id: 'business-support', label: 'GSI Alliance', icon: <Briefcase size={14} /> },
     { id: 'investment', label: 'Investment', icon: <LineChart size={14} /> },
     { id: 'insights', label: 'Insights', icon: <BookOpen size={14} /> },
+    { id: 'team', label: 'Our Team', icon: <Users size={14} /> },
+     { id: 'about', label: 'About us', icon: <Info size={14} /> },
+     { id: 'partner', label: 'Partner with us', icon: <Handshake size={14} /> },
   ];
 
   const handleMobileNavigate = (id: string) => {
