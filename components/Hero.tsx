@@ -26,12 +26,12 @@ export const Hero: React.FC<HeroProps> = ({ onGetFundedClick, onViewMandatesClic
           
           {/* Strategic Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <button 
-              onClick={onGetFundedClick}
-              className="px-10 py-5 rounded-2xl bg-white text-nova-950 font-black uppercase tracking-[0.2em] text-[11px] hover:bg-nova-500 hover:text-white transition-all shadow-2xl shadow-white/5 active:scale-95 flex items-center gap-3"
-            >
-              Access Solutions <ChevronRight size={18} strokeWidth={3} />
-            </button>
+           <button 
+  onClick={onGetFundedClick}
+  className="px-10 py-5 rounded-2xl bg-nova-accent text-nova-950 font-black uppercase tracking-[0.2em] text-[11px] hover:bg-yellow-500 transition-all shadow-2xl shadow-nova-accent/20 active:scale-95 flex items-center gap-3"
+>
+  Access Solutions <ChevronRight size={18} strokeWidth={3} />
+</button>
             <button 
               onClick={onViewMandatesClick}
               className="px-10 py-5 rounded-2xl border border-white/20 bg-white/5 text-white font-black uppercase tracking-[0.2em] text-[11px] hover:bg-white/10 transition-all active:scale-95"

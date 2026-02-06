@@ -68,13 +68,13 @@ export const BusinessFundingPage: React.FC<BusinessFundingPageProps> = ({ onAppl
           </div>
 
           <div className="mt-16 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <button
-              onClick={onApplyClick}
-              className="bg-white text-black px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-nova-500 hover:text-white transition-all shadow-2xl active:scale-95"
-            >
-              Start Your Inquiry
-            </button>
-          </div>
+  <button 
+    onClick={onApplyClick}
+    className="bg-nova-accent text-nova-950 px-12 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-yellow-500 transition-all shadow-2xl shadow-nova-accent/20 active:scale-95"
+  >
+    Start Your Inquiry
+  </button>
+</div>
         </div>
       </div>
 
@@ -101,9 +101,12 @@ export const BusinessFundingPage: React.FC<BusinessFundingPageProps> = ({ onAppl
             <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-light">
               Our diverse credit products are designed to stimulate every sector of the market economy
             </p>
-            <button onClick={onApplyClick} className="text-nova-400 font-bold flex items-center gap-2 mx-auto hover:text-white transition-colors">
-              Consult a Specialist <ArrowRight size={20} />
-            </button>
+            <button 
+  onClick={onApplyClick} 
+  className="text-nova-accent font-bold flex items-center gap-2 mx-auto hover:text-white transition-colors"
+>
+  Consult a Specialist <ArrowRight size={20} />
+</button>
           </div>
         </div>
       </div>

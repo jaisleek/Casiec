@@ -61,12 +61,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onApplyClick, currentView, onNav
 
             <div className="hidden md:flex items-center gap-4">
               <button 
-                type="button"
-                onClick={onApplyClick}
-                className="bg-nova-500 text-white px-7 py-3 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-nova-400 transition-all duration-300 flex items-center gap-2 shadow-xl shadow-nova-500/30 pointer-events-auto"
-              >
-                Inquiry <ChevronRight size={14} strokeWidth={3} />
-              </button>
+  type="button"
+  onClick={onApplyClick}
+  className="bg-nova-accent text-nova-950 px-7 py-3 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-yellow-500 transition-all duration-300 flex items-center gap-2 shadow-xl shadow-nova-accent/30 pointer-events-auto"
+>
+  Inquiry <ChevronRight size={14} strokeWidth={3} />
+</button>
             </div>
 
             <div className="flex lg:hidden">
@@ -108,13 +108,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onApplyClick, currentView, onNav
             ))}
           </div>
           <div className="mt-auto pt-8 border-t border-white/10">
-              <button 
-                type="button"
-                onClick={() => { setIsOpen(false); onApplyClick(); }}
-                className="w-full py-5 bg-white text-nova-950 font-black text-xs uppercase tracking-[0.3em] rounded-2xl text-center shadow-2xl pointer-events-auto"
-              >
-                Initiate Inquiry
-              </button>
+             <button 
+  type="button"
+  onClick={() => { setIsOpen(false); onApplyClick(); }}
+  className="w-full py-5 bg-nova-accent text-nova-950 font-black text-xs uppercase tracking-[0.3em] rounded-2xl text-center shadow-2xl pointer-events-auto"
+>
+  Initiate Inquiry
+</button>
           </div>
         </div>
       </div>

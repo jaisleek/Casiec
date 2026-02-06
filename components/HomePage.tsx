@@ -155,25 +155,24 @@ export const HomePage: React.FC<HomePageProps> = ({ onApplyClick, onNavigate, on
       <section className="py-32 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
-
-            <div className="group relative bg-white/[0.04] border border-white/10 p-10 md:p-14 rounded-[3rem] hover:border-nova-500/50 transition-all duration-500 flex flex-col shadow-2xl">
-              <div className="w-16 h-16 bg-nova-500/20 rounded-2xl flex items-center justify-center text-nova-400 mb-10 group-hover:scale-110 transition-transform shadow-inner">
-                <Wallet size={32} />
-              </div>
-              <h2 className="text-4xl font-black text-white mb-4 tracking-tighter uppercase italic">Casiec Financials</h2>
-              <p className="text-gray-200 mb-8 leading-relaxed font-medium">Focused on driving financial inclusion to stimulate economic prosperity.</p>
-              <ul className="space-y-4 mb-12 flex-grow">
-                {["Asset Finance", "Consumer Loan", "Gender Credit"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-4 text-sm font-bold text-gray-300">
-                    <div className="w-2 h-2 rounded-full bg-nova-500 shadow-[0_0_10px_rgba(37,99,235,0.5)]"></div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <button onClick={() => onNavigate('financial-support')} className="w-full py-5 bg-nova-500 text-white font-black uppercase tracking-widest text-[11px] rounded-2xl hover:bg-nova-400 transition-all shadow-xl shadow-nova-500/20">
-                Access Portfolio
-              </button>
-            </div>
+<div className="group relative bg-white/[0.04] border border-white/10 p-10 md:p-14 rounded-[3rem] hover:border-nova-accent/50 transition-all duration-500 flex flex-col shadow-2xl">
+   <div className="w-16 h-16 bg-nova-accent/20 rounded-2xl flex items-center justify-center text-nova-accent mb-10 group-hover:scale-110 transition-transform shadow-inner">
+      <Wallet size={32} />
+   </div>
+   <h2 className="text-4xl font-black text-white mb-4 tracking-tighter uppercase italic">Casiec Financials</h2>
+   <p className="text-gray-200 mb-8 leading-relaxed font-medium">Focused on driving financial inclusion to stimulate economic prosperity.</p>
+   <ul className="space-y-4 mb-12 flex-grow">
+     {["Asset Finance", "Consumer Loan",  "Gender Credit"].map((item, i) => (
+       <li key={i} className="flex items-center gap-4 text-sm font-bold text-gray-300">
+          <div className="w-2 h-2 rounded-full bg-nova-accent shadow-[0_0_10px_rgba(234,179,8,0.5)]"></div>
+          {item}
+       </li>
+     ))}
+   </ul>
+   <button onClick={() => onNavigate('financial-support')} className="w-full py-5 bg-nova-accent text-nova-950 font-black uppercase tracking-widest text-[11px] rounded-2xl hover:bg-yellow-500 transition-all shadow-xl shadow-nova-accent/20">
+      Access Portfolio
+   </button>
+</div>
 
             <div className="group relative bg-white/[0.04] border border-white/10 p-10 md:p-14 rounded-[3rem] hover:border-orange-500/50 transition-all duration-500 flex flex-col shadow-2xl">
               <div className="w-16 h-16 bg-orange-500/20 rounded-2xl flex items-center justify-center text-orange-400 mb-10 group-hover:scale-110 transition-transform shadow-inner">
@@ -289,9 +288,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onApplyClick, onNavigate, on
                       <label className="block text-[10px] text-gray-400 uppercase font-black tracking-widest mb-3 ml-2">Detailed Brief</label>
                       <textarea required value={contactForm.message} onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })} className="w-full h-32 bg-white/5 border border-white/10 rounded-xl py-4 px-6 text-white focus:outline-none focus:border-nova-500 transition-all resize-none text-sm font-medium placeholder:text-gray-600" placeholder="Describe your requirements..." />
                     </div>
-                    <button type="submit" disabled={isSubmitting} className="w-full bg-white text-nova-950 font-black py-5 rounded-xl transition-all shadow-xl flex items-center justify-center gap-3 uppercase tracking-widest text-[11px] hover:bg-nova-500 hover:text-white active:scale-95">
-                      {isSubmitting ? 'Transmitting...' : 'Send Inquiry'} <Send size={18} />
-                    </button>
+                    <button 
+  type="submit" 
+  disabled={isSubmitting} 
+  className="w-full bg-nova-accent text-nova-950 font-black py-5 rounded-xl transition-all shadow-xl flex items-center justify-center gap-3 uppercase tracking-widest text-[11px] hover:bg-yellow-500 active:scale-95"
+>
+  {isSubmitting ? 'Transmitting...' : 'Send Inquiry'} <Send size={18} />
+</button>
                   </form>
                 )}
               </div>
